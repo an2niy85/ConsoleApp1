@@ -6,7 +6,13 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            int toatalPictures = 52;
+            int picturesInRow = 3;
+            int fullyFilledRaws = toatalPictures / picturesInRow;
+            int picturesBeyondMeasure = toatalPictures % picturesInRow;
+
+            System.Console.WriteLine($"Всего рядов с картинками: {fullyFilledRaws}");
+            System.Console.WriteLine($"Картинок сверх меры: {picturesBeyondMeasure}");
         }
     }
 }
